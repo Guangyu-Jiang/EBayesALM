@@ -2,26 +2,26 @@
 % Please edit documentation in R/prox_h.R
 \name{prox_h}
 \alias{prox_h}
-\title{proximal mapping of h(y) = (-1/n) \sum_j log(y_j), y \in R^n
+\title{proximal mapping of h(y) = (-1/n) \sum_j log(y_j), y R^n
 prox_y = arg min_z { h(z) + (sigma/2) \|z - y\|^2 }
 M_y = min_z { h(z) + (sigma/2) \|z - y\|^2 }
-Input: y \in R^n, sigma \in R
+Input: y R^n, sigma R
 Output:
-prox_y \in R^n: the proximal point of y
-M_y \in R: value of Moreau envelop at y
+prox_y R^n: the proximal point of y
+M_y R: value of Moreau envelop at y
 prox_prime \in R^n: diagonal vector of derivative of proximal maping
 prox_prime_minus = 1 - prox_prime}
 \usage{
 prox_h(y, sigma)
 }
 \description{
-proximal mapping of h(y) = (-1/n) \sum_j log(y_j), y \in R^n
+proximal mapping of h(y) = (-1/n) \sum_j log(y_j), y R^n
 prox_y = arg min_z { h(z) + (sigma/2) \|z - y\|^2 }
 M_y = min_z { h(z) + (sigma/2) \|z - y\|^2 }
-Input: y \in R^n, sigma \in R
+Input: y R^n, sigma R
 Output:
-prox_y \in R^n: the proximal point of y
-M_y \in R: value of Moreau envelop at y
+prox_y R^n: the proximal point of y
+M_y R: value of Moreau envelop at y
 prox_prime \in R^n: diagonal vector of derivative of proximal maping
 prox_prime_minus = 1 - prox_prime
 }

@@ -12,9 +12,9 @@
 #'                    [0  1 0 ... 0] [1  1 0 ... 0] [-1 1 0 ... 0]
 #' sigma_option = 1, I2,
 #'              = 2, SIGMA_i = diag(ai,bi),ai,bi ~ Uniform[1,3]
-#' Output: observations X \in R^{n*d} (n observations in each row)
-#'         theta \in R^{n*d} true signal
-#'         SIGMA \in R^{d*n} if sigma_option = 2, SIGMA(:,:,i) = [ai,bi]
+#' Output: observations X R^{n*d} (n observations in each row)
+#'         theta R^{n*d} true signal
+#'         SIGMA R^{d*n} if sigma_option = 2, SIGMA(:,:,i) = [ai,bi]
 #' @export
 generate_observation <- function(n, fig_option, sigma_option, d){
   if (is.null(d) | d < 2){

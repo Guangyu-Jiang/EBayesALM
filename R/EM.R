@@ -1,6 +1,6 @@
 #' EM for solving the NPMLE with unknown supports
-#' input: observations X \in R^{n*d}
-#' SIGMA: n numbers of diagonal covararince matrices \in R^{d*n}
+#' input: observations X R^{n*d}
+#' SIGMA: n numbers of diagonal covararince matrices R^{d*n}
 #' m: number of grid points
 #' option$grid_initial: initial supports
 #' @export

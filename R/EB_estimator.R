@@ -1,8 +1,8 @@
 #' GMLEB estimator
-#' Input the matrix L \in R^{n*m}
+#' Input the matrix L R^{n*m}
 #'       vector x in R^m, x >= 0, sum xi = 1
-#'       grid points U \in R^{m*d}
-#' Output estimator theta_hat \in R^{n*d}
+#'       grid points U R^{m*d}
+#' Output estimator theta_hat R^{n*d}
 #' @export
 EB_estimator <- function(L, x, U){
   Lx <- L %*% x##n*1

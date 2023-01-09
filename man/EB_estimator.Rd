@@ -3,17 +3,17 @@
 \name{EB_estimator}
 \alias{EB_estimator}
 \title{GMLEB estimator
-Input the matrix L \in R^{n\emph{m}
+Input the matrix L R^{n\emph{m}
 vector x in R^m, x >= 0, sum xi = 1
-grid points U \in R^{m}d}
-Output estimator theta_hat \in R^{n*d}}
+grid points U R^{m}d}
+Output estimator theta_hat R^{n*d}}
 \usage{
 EB_estimator(L, x, U)
 }
 \description{
 GMLEB estimator
-Input the matrix L \in R^{n\emph{m}
+Input the matrix L R^{n\emph{m}
 vector x in R^m, x >= 0, sum xi = 1
-grid points U \in R^{m}d}
-Output estimator theta_hat \in R^{n*d}
+grid points U R^{m}d}
+Output estimator theta_hat R^{n*d}
 }

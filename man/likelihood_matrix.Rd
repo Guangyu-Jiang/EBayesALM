@@ -3,11 +3,11 @@
 \name{likelihood_matrix}
 \alias{likelihood_matrix}
 \title{generate the matrix L
-Input: observations X \in R^{n\emph{d}
-grid points U \in R^{m}d}
+Input: observations X R^{n\emph{d}
+grid points U R^{m}d}
 SIGMA \in R^{1\emph{d}n}
 normalizerows = 1, then max number of each row of output L is 1
-Output: L \in R^{n*m}
+Output: L R^{n*m}
 L_ij = mvtnorm(X\link{i,} - U\link{j,},SIGMA_i)
 rowmax\link{i} = max(L_ij,j=1,...,m)
 if normalizerows = 1, L\link{i,} = Lorig\link{i,:}/rowmax\link{i};
@@ -18,11 +18,11 @@ likelihood_matrix(X, U, SIGMA, normalizerows, restrict_dist)
 }
 \description{
 generate the matrix L
-Input: observations X \in R^{n\emph{d}
-grid points U \in R^{m}d}
+Input: observations X R^{n\emph{d}
+grid points U R^{m}d}
 SIGMA \in R^{1\emph{d}n}
 normalizerows = 1, then max number of each row of output L is 1
-Output: L \in R^{n*m}
+Output: L R^{n*m}
 L_ij = mvtnorm(X\link{i,} - U\link{j,},SIGMA_i)
 rowmax\link{i} = max(L_ij,j=1,...,m)
 if normalizerows = 1, L\link{i,} = Lorig\link{i,:}/rowmax\link{i};

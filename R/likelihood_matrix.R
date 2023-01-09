@@ -1,9 +1,9 @@
 #' generate the matrix L
-#' Input: observations X \in R^{n*d}
-#'        grid points U \in R^{m*d}
+#' Input: observations X R^{n*d}
+#'        grid points U R^{m*d}
 #'        SIGMA \in R^{1*d*n}
 #'        normalizerows = 1, then max number of each row of output L is 1
-#' Output: L \in R^{n*m}
+#' Output: L R^{n*m}
 #'         L_ij = mvtnorm(X[i,] - U[j,],SIGMA_i)
 #'         rowmax[i] = max(L_ij,j=1,...,m)
 #'         if normalizerows = 1, L[i,] = Lorig[i,:]/rowmax[i];

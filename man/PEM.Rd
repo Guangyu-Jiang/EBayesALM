@@ -3,14 +3,14 @@
 \name{PEM}
 \alias{PEM}
 \title{partial EM
-input: observations X \in R^{n\emph{d}
-Sigma: n numbers of diagonal covaraince matrices \in R^{n}d}
+input: observations X R^{n\emph{d}
+Sigma: n numbers of diagonal covaraince matrices R^{n}d}
 m: number of grid points m<-n(PEM is mainly for d>=3)
 mu: support set
 option.grid_initial: initial supports
 PEM for solving the NPMLE with unknown supports
-input: observations X \in R^{n\emph{d}
-Sigma: n numbers of diagonal covaraince matrices \in R^{n}d}
+input: observations X R^{n\emph{d}
+Sigma: n numbers of diagonal covaraince matrices R^{n}d}
 m: number of grid points
 option$grid_initial: initial supports}
 \usage{
@@ -18,14 +18,14 @@ PEM(X, SIGMA, m, options)
 }
 \description{
 partial EM
-input: observations X \in R^{n\emph{d}
-Sigma: n numbers of diagonal covaraince matrices \in R^{n}d}
+input: observations X R^{n\emph{d}
+Sigma: n numbers of diagonal covaraince matrices R^{n}d}
 m: number of grid points m<-n(PEM is mainly for d>=3)
 mu: support set
 option.grid_initial: initial supports
 PEM for solving the NPMLE with unknown supports
-input: observations X \in R^{n\emph{d}
-Sigma: n numbers of diagonal covaraince matrices \in R^{n}d}
+input: observations X R^{n\emph{d}
+Sigma: n numbers of diagonal covaraince matrices R^{n}d}
 m: number of grid points
 option$grid_initial: initial supports
 }

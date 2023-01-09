@@ -3,21 +3,21 @@
 \name{select_grid}
 \alias{select_grid}
 \title{select grid points
-Input: observations X \in R^{n\emph{d} (n observations in each row)
+Input: observations X R^{n\emph{d} (n observations in each row)
 grid_option = 1 grid points are chosen to be the data points
 = 2 grid points are taken as a random subsample of the data points
 = 3 use a uniform grid in a compact region (e.g.,rectangle in d=2) containing the data
 = 4 logspace of y, linspace of x
-Output: grid points U \in R^{m}d} (m observations in each row)}
+Output: grid points U R^{m}d} (m observations in each row)}
 \usage{
 select_grid(X, grid_option, m)
 }
 \description{
 select grid points
-Input: observations X \in R^{n\emph{d} (n observations in each row)
+Input: observations X R^{n\emph{d} (n observations in each row)
 grid_option = 1 grid points are chosen to be the data points
 = 2 grid points are taken as a random subsample of the data points
 = 3 use a uniform grid in a compact region (e.g.,rectangle in d=2) containing the data
 = 4 logspace of y, linspace of x
-Output: grid points U \in R^{m}d} (m observations in each row)
+Output: grid points U R^{m}d} (m observations in each row)
 }
