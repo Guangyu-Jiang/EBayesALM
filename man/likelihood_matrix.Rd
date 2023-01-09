@@ -5,7 +5,7 @@
 \title{generate the matrix L
 Input: observations X R^{n\emph{d}
 grid points U R^{m}d}
-SIGMA \in R^{1\emph{d}n}
+SIGMA R^{1\emph{d}n}
 normalizerows = 1, then max number of each row of output L is 1
 Output: L R^{n*m}
 L_ij = mvtnorm(X\link{i,} - U\link{j,},SIGMA_i)
@@ -20,7 +20,7 @@ likelihood_matrix(X, U, SIGMA, normalizerows, restrict_dist)
 generate the matrix L
 Input: observations X R^{n\emph{d}
 grid points U R^{m}d}
-SIGMA \in R^{1\emph{d}n}
+SIGMA R^{1\emph{d}n}
 normalizerows = 1, then max number of each row of output L is 1
 Output: L R^{n*m}
 L_ij = mvtnorm(X\link{i,} - U\link{j,},SIGMA_i)
