@@ -102,7 +102,7 @@ Linsolver_MLE <- function(rhs, LL, prox_v1_prime_m, v2, par){
     solve_ok <- 1
   }
   if (solveby == 'none'){
-    dv <- 10*n*rhs/c(prox_v1_prime_m)
+    dv <- 100*n*rhs/c(prox_v1_prime_m)
     resnrm <- 0
     solve_ok <- 1
   }
