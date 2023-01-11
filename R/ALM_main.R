@@ -11,6 +11,7 @@ DualALM_main <- function(LL, parmain, x, y, u, v){
   sigma <- parmain$sigma
   m <- parmain$m
   n <- parmain$n
+  d <- parmain$d
   stop <- 0
   sigmamax <- 1e7
   sigmamin <- 1e-8
@@ -51,6 +52,7 @@ DualALM_main <- function(LL, parmain, x, y, u, v){
   parNCG$approxRank <- approxRank
   parNCG$m <- m
   parNCG$n <- n
+  parNCG$d <- d
   maxitersub <- 20
   ssncgop <- list()
   ssncgop$tol <- stoptol
