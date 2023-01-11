@@ -67,6 +67,7 @@ DualALM <- function(L, options){
       init_opt <- options$init_opt
     }
   }
+  d <- options$d
   if (printyes) {
     cat(sprintf("\n*************************************************************************************"))
     cat(sprintf("\n ALM for the dual problem"))
@@ -186,7 +187,8 @@ DualALM <- function(L, options){
     approxRank = approxRank,
     sigma = sigma,
     m = m,
-    n = n
+    n = n,
+    d = d
   )
   ## call Dual ALM_ main
   Main_return <- DualALM_main(LL, parmain, xnew, ynew, unew, vnew)
