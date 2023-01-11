@@ -2,6 +2,7 @@
 Linsolver_MLE <- function(rhs, LL, prox_v1_prime_m, v2, par){
   n <- par$n
   m <- par$m
+  d <- par$d
   sigma <- par$sigma
   eps <- 2.2204e-16
   J <- v2 > 0
@@ -102,7 +103,7 @@ Linsolver_MLE <- function(rhs, LL, prox_v1_prime_m, v2, par){
     solve_ok <- 1
   }
   if (solveby == 'none'){
-    dv <- 10*n*rhs/c(prox_v1_prime_m)
+    dv <- 10*n*d*rhs/c(prox_v1_prime_m)
     resnrm <- 0
     solve_ok <- 1
   }
