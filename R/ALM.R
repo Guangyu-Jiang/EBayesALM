@@ -67,7 +67,6 @@ DualALM <- function(L, options){
       init_opt <- options$init_opt
     }
   }
-  d <- options$d
   if (printyes) {
     cat(sprintf("\n*************************************************************************************"))
     cat(sprintf("\n ALM for the dual problem"))
@@ -152,14 +151,15 @@ DualALM <- function(L, options){
   ## function3  initialization
   if (init_opt == 0) {
     xnew <- matrix(1, m, 1)/m
-    ynew <- rowSums(L) / m
+    ynew <- matrix(rowSums(L) / m, n, 1)
     unew <- 1 / ynew
     vnew <- unew
   }else {
     xnew <- 0.5 * sigma * matrix(1, m, 1)
-    ynew <- rowSums(L) / m
+    ynew <- matrix(rowSums(L) / m, n, 1)
     unew <- 1 / ynew
     vnew <- matrix(2.2204e-16, n, 1)
+    print(dim(vnew))
   }
   Lx <- LL$times(xnew)
   tmp <- LL$trans(1 / Lx) / n - 1
@@ -187,8 +187,7 @@ DualALM <- function(L, options){
     approxRank = approxRank,
     sigma = sigma,
     m = m,
-    n = n,
-    d = d
+    n = n
   )
   ## call Dual ALM_ main
   Main_return <- DualALM_main(LL, parmain, xnew, ynew, unew, vnew)
