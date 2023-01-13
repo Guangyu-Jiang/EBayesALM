@@ -107,5 +107,5 @@ Linsolver_MLE <- function(rhs, LL, prox_v1_prime_m, v2, par){
     resnrm <- 0
     solve_ok <- 1
   }
-  return(list(dv = dv, resnrm = resnrm, solve_ok = solve_ok, par = par))
+  return(list(dv = matrix(dv, length(dv), 1), resnrm = resnrm, solve_ok = solve_ok, par = par))
 }
